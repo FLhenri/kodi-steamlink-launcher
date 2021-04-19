@@ -61,7 +61,7 @@ Plugin for [Kodi](https://kodi.tv/) to launch [Steamlink](https://steamcommunity
 
   ```bash
   cat <<EOF | sudo tee /etc/sudoers.d/steamlink-kodi
-  kodi ALL=(root) NOPASSWD: /bin/systemctl stop kodi, /bin/systemctl restart kodi, /bin/openvt
+  kodi ALL=(root) NOPASSWD: /bin/systemctl stop kodi, /bin/systemctl restart kodi, /bin/openvt, /bin/xinit, /bin/sh, /bin/steamlink, /bin/xrandr
   EOF
   ```
 
