@@ -1,6 +1,7 @@
 # Steamlink Launcher for Kodi
 
 Plugin for [Kodi](https://kodi.tv/) to launch [Steamlink](https://steamcommunity.com/app/353380/discussions/6/2806204039992195182/).
+(Fork for Raspbian Buster - not Lite but with display off - on RPi4)
 
 ## Requirements
 
@@ -16,7 +17,7 @@ Plugin for [Kodi](https://kodi.tv/) to launch [Steamlink](https://steamcommunity
 * A `kodi` user is created and used to start `kodi-standalone` service:
 
   ```shell
-  sudo useradd -a -m -U -G "audio,bluetooth,input,plugdev,video" -s /bin/bash -u 999 kodi
+  sudo useradd -m -U -G audio,video,input,dialout,plugdev,netdev,users,cdrom,tty -s /bin/bash -u 999 kodi
   ```
 
 * Systemd service unit is being installed to start `kodi-standalone` service:
