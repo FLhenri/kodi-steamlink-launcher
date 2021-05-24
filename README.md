@@ -51,6 +51,13 @@ Plugin for [Kodi](https://kodi.tv/) to launch [Steamlink](https://steamcommunity
   sudo apt-get update
   sudo apt-get install -y steamlink
   ```
+  
+* Install xdotool (to get focus)
+
+  ```shell
+  sudo apt-get update
+  sudo apt-get install -y xdotool
+  ```
 
 ## Plugin installation
 
